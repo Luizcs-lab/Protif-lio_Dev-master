@@ -1,0 +1,303 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfólio Dev</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonte moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/menu.js" defer></script>
+</head>
+
+<body>
+
+    <!-- partículas -->
+    <div id="particles-js"></div>
+
+    <!-- botão voltar topo -->
+    <button id="topBtn">↑</button>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="titulo">
+            <h1>Portfólio_Dev</h1>
+        </div>
+
+        <!-- menu mobile -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav>
+            <a class="btn-menu" href="#inicio">Home</a>
+            <a class="btn-menu" href="#sobre">Sobre</a>
+            <a class="btn-menu" href="#portfolio">Portfólio</a>
+            <a class="btn-menu" href="#servicos">Serviços</a>
+            <a class="btn-menu" href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main id="inicio">
+
+        <div class="capa">
+
+            <h1>Hello World!</h1>
+
+            <h2>Sou Henrique</h2>
+
+            <h3>
+                <span id="typed"></span>
+            </h3>
+
+            <!-- redes -->
+            <div class="redes">
+
+                <a href="#">
+                    <img
+                        class="btn-rede"
+                        src="icons/github.png"
+                        alt="GitHub"
+                        width="60"
+                    />
+                </a>
+
+                <a href="#">
+                    <img
+                        class="btn-rede"
+                        src="icons/instagram (1).png"
+                        alt="Instagram"
+                        width="60"
+                    />
+                </a>
+
+                <a href="#">
+                    <img
+                        class="btn-rede"
+                        src="icons/whatsapp.png"
+                        alt="WhatsApp"
+                        width="60"
+                    />
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- foto -->
+        <div class="fotodev">
+
+            <img
+                src="img/Gemini_Generated_Image_3jnygn3jnygn3jny.png"
+                alt="Foto do desenvolvedor"
+            />
+
+        </div>
+
+    </main>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="secao-sobre">
+
+        <h2>Sobre Mim</h2>
+
+        <div class="sobre-container">
+
+            <p>
+                Sou desenvolvedor de sistemas apaixonado por tecnologia,
+                desenvolvimento web e soluções inteligentes.
+
+                Possuo experiência com desenvolvimento Full Stack,
+                bancos de dados relacionais, APIs REST,
+                servidores Linux e aplicações corporativas.
+
+                Trabalho com tecnologias modernas como Python,
+                Java, Spring Boot, PostgreSQL, MySQL,
+                HTML, CSS e JavaScript.
+
+                Meu foco é criar sistemas eficientes,
+                modernos e com ótima experiência visual.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="secao-portfolio">
+
+        <h2>Portfólio</h2>
+
+        <div class="trabalhos-portfolio">
+
+            <div class="card-portfolio">
+                <img src="img/backendjava.jpg" alt="Projeto Backend Java">
+            </div>
+
+            <div class="card-portfolio">
+                <img src="img/controleestoquepython.jpg" alt="Projeto Python">
+            </div>
+
+            <div class="card-portfolio">
+                <img src="img/servidorlinux.png" alt="Servidor Linux">
+            </div>
+
+            <div class="card-portfolio">
+                <img src="img/landingpage.jpg" alt="Landing Page">
+            </div>
+
+            <div class="card-portfolio">
+                <img src="img/postgresql.png" alt="Banco PostgreSQL">
+            </div>
+
+            <div class="card-portfolio">
+                <img src="img/2149901770.jpg" alt="Projeto Web">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="secao-servicos">
+
+        <h2>Serviços</h2>
+
+        <div class="container">
+
+            <div class="item">
+                <h3>Desenvolvimento Python</h3>
+
+                <p>
+                    APIs robustas, automação de processos
+                    e aplicações inteligentes.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Bancos de Dados</h3>
+
+                <p>
+                    Modelagem, performance,
+                    segurança e administração de dados.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Servidores Linux</h3>
+
+                <p>
+                    Infraestrutura, deploy,
+                    manutenção e monitoramento.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <main id="contato" class="main-contato">
+
+        <section class="container-contato">
+
+            <div class="contato">
+
+                <h2 class="contato-titulo">
+                    Contact <span>Me!</span>
+                </h2>
+
+                <form id="contact-form" class="contato-form">
+
+                    <div class="contato-row">
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Seu Nome"
+                            required
+                        />
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Seu Email"
+                            required
+                        />
+
+                    </div>
+
+                    <div class="contato-row">
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Telefone"
+                        />
+
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Assunto"
+                        />
+
+                    </div>
+
+                    <textarea
+                        name="message"
+                        placeholder="Sua Mensagem"
+                        rows="8"
+                        required
+                    ></textarea>
+
+                    <div class="contato-btn-box">
+
+                        <button
+                            type="submit"
+                            class="contato-btn"
+                        >
+                            Enviar Mensagem
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p class="rodape">
+            © 2026 Todos os direitos reservados
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
