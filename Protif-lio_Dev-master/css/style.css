@@ -272,14 +272,31 @@ section h2{
     transition:0.5s ease;
 }
 
-.card-portfolio:hover{
+.card-portfolio:hover #descricao{
     transform:translateY(-10px);
     box-shadow:var(--shadow);
+    color: #ffffff;
+    display: flex;
+   flex-direction: row;
+   background-color: #a020f0;
+   align-items: center;
+   justify-items: center;
+   margin-left: 4%;
+   transform: scale(1.08);
+   text-align: center;
+   padding-left: 10px;
+   visibility: visible;
 }
 
 .card-portfolio:hover img{
     transform:scale(1.08);
+    
 }
+/*visibilidade da descrição do card*/
+#descricao{
+    visibility: hidden;
+}
+
 
 
 
